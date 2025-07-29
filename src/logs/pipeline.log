@@ -1252,3 +1252,4 @@ LINE 1: ...en, high, low, close, volume) VALUES (NULL, NULL, 'TSLA', 'T...
 2025-07-28 17:58:07,398 [INFO] DataFrame dtypes: {'ticker': dtype('O'), 'date': dtype('<M8[ns]'), 'open': dtype('float64'), 'high': dtype('float64'), 'low': dtype('float64'), 'close': dtype('float64'), 'volume': dtype('float64')}
 2025-07-28 17:58:07,398 [INFO] Sample data: [{'ticker': 'nan', 'date': NaT, 'open': nan, 'high': nan, 'low': nan, 'close': nan, 'volume': nan}]
 2025-07-28 17:58:07,424 [INFO] Loaded 250 rows from tsla.csv
+2025-07-29 13:56:08,949 [INFO] Connected to: PostgreSQL 17.5 on x86_64-windows, compiled by msvc-19.44.35209, 64-bit
