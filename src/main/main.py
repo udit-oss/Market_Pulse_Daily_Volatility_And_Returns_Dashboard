@@ -5,10 +5,10 @@ from utils.logger import setup_logger
 logger = setup_logger(__name__)
 
 def main():
-    logger.info("=== Day 1 pipeline start ===")
+    logger.info("=== Day 1 pipeline start ===")
     fetch_all()             
     load_to_postgres()     
-    logger.info("=== Day 1 pipeline end ===")
+    logger.info("=== Day 1 pipeline end ===")
 
 if __name__ == "__main__":
     main()
