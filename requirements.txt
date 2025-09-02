@@ -1,0 +1,11 @@
+python-dotenv
+sqlalchemy
+yfinance
+pandas
+psycopg2
+matplotlib
+seaborn
+numpy
+scipy
+statsmodels
+arch
