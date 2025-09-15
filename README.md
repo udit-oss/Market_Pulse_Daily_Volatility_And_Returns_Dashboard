@@ -39,9 +39,11 @@ MARKET_PULSE_DAILY_VOLATILITY_DASHBOARD/
 │   └── .env                          # Environment configuration
 ├── 📁 data/
 │   ├── 📁 raw/                       # Yahoo Finance CSV downloads
-│   ├── 📁 staged/                    # Processed datasets
-│   │   └── 📁 forecasts/             # GARCH model outputs
+│   └── 📁 staged/                    # Processed datasets & forecasts
 ├── 📁 docs/                          # Business documentation
+│   ├── Market_Pulse_Business_Problem.pdf
+│   ├── Market_Pulse_Methodology.pdf
+│   └── Market_Pulse_Data_Dictionary.xlsx
 ├── 📁 report/                        # Power BI dashboard (.pbix)
 ├── 📁 sql/                           # Database schema
 ├── 📁 src/
@@ -50,9 +52,15 @@ MARKET_PULSE_DAILY_VOLATILITY_DASHBOARD/
 │   │   ├── 📁 transform/             # Data cleaning & feature engineering
 │   │   ├── 📁 load/                  # Database integration
 │   │   └── 📁 ml/                    # GARCH volatility modeling
-│   └── 📁 utils/                     # Configuration, logging, database utilities
+│   ├── 📁 utils/                     # Configuration, logging, database files
+│   ├── 📁 logs/                      # Pipeline execution logs
+│   ├── 📁 notebooks/                 # Jupyter analysis notebooks
+│   └── 📁 tests/                     # Unit tests
 ├── 📁 summary/                       # Executive presentation
-└── 📁 tests/                         # Unit tests
+├── 📁 venv/                          # Virtual environment
+├── .gitignore
+├── README.md
+└── requirements.txt
 ```
 
 ## ⚡ Key Features
