@@ -1,7 +1,7 @@
-# from src.main.extract.fetch_data import fetch_all
-# from src.main.transform.clean_data import clean_all_stocks
-# from src.main.load.load_to_postgres import load_to_postgres
-# from src.main.transform.calculate_returns_volatility import process_all_tickers
+from src.main.extract.fetch_data import fetch_all
+from src.main.transform.clean_data import clean_all_stocks
+from src.main.load.load_to_postgres import load_to_postgres
+from src.main.transform.calculate_returns_volatility import process_all_tickers
 from src.main.ml.forecast_volatility import process_all_tickers_garch
 from src.utils.logger import setup_logger
 from pathlib import Path
@@ -23,12 +23,12 @@ def main():
     logger.info(f"Processed output: {processed_output}")
     logger.info(f"Forecast dir: {forecast_dir}")
 
-    # fetch_all()
-    # logger.info('=== Data Cleaning ===')
-    # clean_all_stocks(raw_dir, clean_output)             
-    # load_to_postgres()
-    # logger.info('=== Calculate Returns and Volatility ===')
-    # process_all_tickers(clean_output, processed_output)  
+    fetch_all()
+    logger.info('=== Data Cleaning ===')
+    clean_all_stocks(raw_dir, clean_output)             
+    load_to_postgres()
+    logger.info('=== Calculate Returns and Volatility ===')
+    process_all_tickers(clean_output, processed_output)  
     logger.info('=== Volatility Forecast ===')
     process_all_tickers_garch(processed_output, forecast_dir) 
 
